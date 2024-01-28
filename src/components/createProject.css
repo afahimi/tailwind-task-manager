@@ -1,0 +1,11 @@
+.formElement {
+    @apply bg-slate-200 px-2 py-3 rounded-md border-2 border-gray-300 hover:border-gray-700 transition ease-linear
+}
+
+.formText {
+    @apply text-gray-400 font-medium
+}
+
+.formWidth {
+    @apply flex flex-col gap-4 justify-start w-96
+}
