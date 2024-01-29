@@ -23,6 +23,7 @@ const ProjectInfo = ({ data, setProjects, projects, setCurrentPage }) => {
   };
 
   const addnewTask = () => {
+    if (taskRef.current.value === "") return;
     const index = getProjectIndex(data);
     setProjects((prevProjects) => {
       const newProjects = [...prevProjects];

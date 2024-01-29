@@ -9,7 +9,7 @@ const Home = ({setCurrentPage}) => {
         country after all)
       </h2>
       <button
-        className="bg-black px-5 py-2 rounded-md border-2 border-slate-400 hover:bg-slate-400"
+        className="bg-black px-5 py-2 rounded-md border-2 border-slate-400 hover:bg-slate-400 transition ease-in"
         onClick={() => setCurrentPage("new-proj")}
       >
         <h2 className="text-white">Create new project</h2>

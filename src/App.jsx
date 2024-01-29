@@ -54,16 +54,20 @@ function App() {
     <div className="flex flex-row gap-4">
       <div className="w-3/12 h-screen bg-slate-700 rounded-lg overflow-hidden">
         <div className="flex flex-col gap-4 py-24 items-center">
-          <h1 className="text-3xl text-white flex items-start ">Your Projects</h1>
-          <button className="bg-gray-500 px-5 py-2 rounded-md border-2 border-gray-950 hover:bg-slate-400 transition ease-in">
-            <h2
-              className="text-white"
-              onClick={() => setCurrentPage("new-proj")}
-            >
-              + Add Project
-            </h2>
-          </button>
-          <div className="py-4 flex flex-col gap-3">
+          <div className="flex flex-col gap-6 items-start w-fit pr-12">
+            <h1 className="text-4xl text-white font-bold flex items-start">
+              Your Projects
+            </h1>
+            <button className="bg-gray-500 px-5 py-2 rounded-md hover:bg-slate-400 transition ease-in">
+              <h2
+                className="text-white"
+                onClick={() => setCurrentPage("new-proj")}
+              >
+                + Add Project
+              </h2>
+            </button>
+          </div>
+          <div className="py-4 flex flex-col gap-1">
             {projects.map((project, index) => {
               return (
                 <SideModal
